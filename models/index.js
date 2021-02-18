@@ -67,4 +67,4 @@ User.hasMany(Post, {
 
 
 
-module.exports = { User, Post };
+module.exports = { User, Post, Vote, Comment };

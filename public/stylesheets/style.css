@@ -1,0 +1,168 @@
+
+.mainflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainicon{
+    background-image: url("../assets/images/blue_book.png");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-top:  6px;
+    margin-right: 5px;
+}
+
+.maintitle{
+    font-size: 38px;
+    color: rgb(0, 162, 255);
+    text-decoration: none; 
+    margin-top:  45px;
+}
+
+a{
+    color: rgb(0, 162, 255);
+    text-decoration: none; 
+   
+}
+
+.dashicon{
+    background-image: url("../assets/images/dashboard.png");
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+ 
+
+}
+
+.loginbutton{
+    color: white;
+    margin-left: 480px;
+    margin-top: 10px;
+}
+
+.logoutbutton{
+    color: white;
+    margin-left: 175px;
+    margin-top: 10px;
+}
+
+.dashflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 200px;
+    font-size: 20px;
+}
+
+.welcomebanner{
+    font-size: 38px;
+    color: rgb(0, 162, 255);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.signininstructions{
+    font-size: 25px;
+    color: rgb(0, 162, 255);
+    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.signininstructions2{
+    font-size: 38px;
+    font-weight: bold;
+    color: rgb(0, 162, 255);
+    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.signup-form{
+    margin-left: 20px;
+    
+}
+
+.login-form{
+    margin-left: 20px;
+    
+}
+
+.buttonspots{
+    margin-left: 125px;
+}
+
+.homepageflex{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*Dashboard*/
+
+.dashboard{
+    display:flex;
+}
+
+.flexheader{
+    display:flex;
+    flex-direction: column;
+}
+
+
+/* Create new Post CSS */
+
+.newpostflex{
+    display: flex;
+    justify-content: center;
+}
+
+.newposttitle{
+    font-weight: bold;
+    color: rgb(0, 162, 255);
+}
+
+.createpost{
+    margin-left: 80px;
+}
+
+/* Edit Post*/
+.editpostflex{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.edittitle{
+    color: rgb(0, 162, 255);
+}
+
+ol{
+    width: 50%;
+}
+
+/*homepage*/
+.posttitle{
+    font-size: 20px;
+    border-bottom-style: solid ;
+    border-bottom-color: blue ;
+    border-bottom-width: 5px;
+}
+
+.postlink{
+    font-size: 26px;
+}
+
+/* comment */
+.singlecommentedit{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}

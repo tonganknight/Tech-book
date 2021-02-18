@@ -1,0 +1,23 @@
+<div class="singlecommentedit">
+{{> post-info post}}
+
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit" class=" btn btn-success">add comment</button>
+    <button type="button" class=" btn btn-primary upvote-btn">upvote</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+</div>
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
+{{/if}}
