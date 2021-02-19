@@ -16,14 +16,17 @@ async function commentFormHandler(event) {
       headers: {
         'Content-Type': 'application/json'
       }
-    });
-
-    if (response.ok) {
+    }).then(function(){
+      document.location.reload();
+    })
+    .catch(err => console.log(err));
+    
+     /*if (response.ok) {
       document.location.reload();
     } else {
       alert(response.statusText);
-    }
-  }
+    } */
+  } 
 }
 
 document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);

@@ -12,14 +12,18 @@ async function loginFormHandler(event) {
         password
       }),
       headers: { 'Content-Type': 'application/json' }
-    });
+    }).then(function(){
+      document.location.replace('/dashboard/');
+    }). 
+    catch(err => console.log(err));
+  }
 
-    if (response.ok) {
+     /*if (response.ok) {
       document.location.replace('/dashboard/');
     } else {
       alert(response.statusText);
     }
-  }
+  } */
 }
 
 async function signupFormHandler(event) {

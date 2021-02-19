@@ -13,13 +13,16 @@ async function newFormHandler(event) {
     headers: {
       'Content-Type': 'application/json'
     }
-  });
+  }).then(function(){
+    document.location.replace('/dashboard/');
+  })
+  .catch(err => console.log(err));
 
-  if (response.ok) {
+   /*if (response.ok) {
     document.location.replace('/dashboard');
   } else {
     alert(response.statusText);
-  }
+  } */
 }
 
 document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);
