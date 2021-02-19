@@ -59,7 +59,7 @@ class User extends Model {
       underscored: true,
       modelName: 'user'
     }
-  );
+  )
   
   module.exports = User;
   
