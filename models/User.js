@@ -43,14 +43,38 @@ class User extends Model {
     {
       hooks: {
         // set up beforeCreate lifecycle "hook" functionality
-        async beforeCreate(newUserData) {
-          newUserData.password = await bcrypt.hash(newUserData.password, 10);
+         /* async  */
+         
+          beforeCreate(newUserData) {
+            new Promise(function(resolve, reject){
+           
+          /* newUserData.password = await  */
+          
+          bcrypt.hash(newUserData.password, 10)
+          .then(newpassword => {
+            newUserData.password = newpassword;
+            Promise.resolve
+         }).catch(err => console.log(err))  
+        
+        
           return newUserData;
+
+         })
         },
   
-        async beforeUpdate(updatedUserData) {
-          updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        /* async  */ beforeUpdate(updatedUserData) {
+          /*updatedUserData.password = await */ 
+          
+          new Promise(function(resolve, reject){
+         
+          bcrypt.hash(updatedUserData.password, 10)
+          .then(newpassword => {
+            updatedUserData.password = newpassword;
+            Promise.resolve
+          })
           return updatedUserData;
+
+          }).catch(err => console.log(err))  
         }
       },
       sequelize,
