@@ -1,9 +1,22 @@
+.nomar{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.break{
+    margin-top: 20px;
+}
+
 
 .mainflex{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image:  url("https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-blue-tech-business-light-banner-background-image_209671.jpg");
+    background-size: cover;
+    height: 300px;
 }
 
 .mainicon{
@@ -23,9 +36,14 @@
 }
 
 a{
-    color: rgb(0, 162, 255);
+    color: white;
     text-decoration: none; 
    
+}
+
+a:hover{
+    color: yellow;
+    text-decoration: none;
 }
 
 .dashicon{
@@ -44,9 +62,22 @@ a{
 }
 
 .logoutbutton{
-    color: white;
+    background-color: #ffc107 !important;
+    color: white !important;
     margin-left: 175px;
     margin-top: 10px;
+    width: 90px;
+    height: 45px;
+    border-radius: 19px;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+
+
+}
+
+.logoutbutton:hover{
+    background-color: blue !important;
 }
 
 .dashflex{
@@ -99,7 +130,9 @@ a{
 
 .homepageflex{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    background-color: darkblue;
+    color: yellow;
 }
 
 
@@ -152,7 +185,7 @@ ol{
 .posttitle{
     font-size: 20px;
     border-bottom-style: solid ;
-    border-bottom-color: blue ;
+    border-bottom-color: yellow ;
     border-bottom-width: 5px;
 }
 
@@ -165,4 +198,28 @@ ol{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+}
+
+
+/* Intro*/
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: darkblue;
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+.introflex{
+    display: flex;
+    flex-direction: row;
+    background-color: darkblue;
+}
+
+.introbody{
+    margin-left: 400px;
+    margin-right: 400px;
 }
