@@ -1,3 +1,8 @@
+:root{
+    --primary-color: white;
+    --background-color: darkblue !important;
+    --tertiary-color:yellow;
+}
 .nomar{
     margin: 0 !important;
     padding: 0 !important;
@@ -6,6 +11,14 @@
 
 .break{
     margin-top: 20px;
+}
+
+li{
+    margin-bottom: 30px; /*distance between each post*/
+}
+
+li::marker{
+    font-size: 20px;
 }
 
 
@@ -31,18 +44,19 @@
 .maintitle{
     font-size: 38px;
     color: rgb(0, 162, 255);
-    text-decoration: none; 
     margin-top: 45px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 50px;
 }
 
 a{
-    color: white;
+    color: var(--primary-color);;
     text-decoration: none; 
    
 }
 
 a:hover{
-    color: yellow;
+    color: var(--tertiary-color);;
     text-decoration: none;
 }
 
@@ -56,15 +70,15 @@ a:hover{
 }
 
 .loginbutton{
-    color: white;
+    color: var(--primary-color);;
     margin-left: 480px;
     margin-top: 10px;
 }
 
 .logoutbutton{
     background-color: #ffc107 !important;
-    color: white !important;
-    margin-left: 175px;
+    color: var(--primary-color) !important;
+    margin-left: 10px;
     margin-top: 10px;
     width: 90px;
     height: 45px;
@@ -72,12 +86,13 @@ a:hover{
     font-size: 19px;
     font-weight: bold;
     border: none;
+    font-family: 'Share Tech Mono', monospace;
 
 
 }
 
 .logoutbutton:hover{
-    background-color: blue !important;
+    background-color: var(--secondary) !important;
 }
 
 .dashflex{
@@ -86,6 +101,7 @@ a:hover{
     justify-content: center;
     margin-right: 200px;
     font-size: 20px;
+    margin-top: 1%;
 }
 
 .welcomebanner{
@@ -130,9 +146,9 @@ a:hover{
 
 .homepageflex{
     display: flex;
-    justify-content: flex-start;
-    background-color: darkblue;
-    color: yellow;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: var(--tertiary-color);;
 }
 
 
@@ -142,6 +158,10 @@ a:hover{
 
 .dashboard{
     display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .flexheader{
@@ -185,7 +205,7 @@ ol{
 .posttitle{
     font-size: 20px;
     border-bottom-style: solid ;
-    border-bottom-color: yellow ;
+    border-bottom-color: palegoldenrod ;
     border-bottom-width: 5px;
 }
 
@@ -207,19 +227,85 @@ ol{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    background-color: darkblue;
-    font-size: 19px;
+    color: var(--primary-color);;
+    font-size: 50px;
     margin-top: 25px;
 }
 
 .introflex{
     display: flex;
     flex-direction: row;
-    background-color: darkblue;
+    justify-content: center;
+    background-color: var(--background-color);
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .introbody{
     margin-left: 400px;
     margin-right: 400px;
+}
+
+.title{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.dashlinktext{
+    font-size: 25px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    margin-left: 5px;
+    
+}
+
+.introcard{
+    width: 40% !important;
+    margin: 20px;
+}
+
+.introbackdrop{
+    color: var(--primary-color);
+    font-size: 25px;
+    font-size: 25px;
+}
+
+.firsttimedoc{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.postbutton{
+    font-size: 25px;
+}
+
+.postbutton:hover{
+    color: yellow;
+}
+
+.postinfoflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leadsto{
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
+
+.commentbutton{
+    width: 173px;
+    height: 40px!important;
+    font-size: 20px;
+    margin-bottom: 15px;  
+    font-weight: bold;
+}
+
+.commentbutton:hover{
+    background-color: yellow;
+    color: black;
 }
